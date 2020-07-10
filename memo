@@ -7,6 +7,9 @@ v-html 関数内にタグを入れてもエスケープ処理をしてくれる
 v-bind hrefなど属性値にそのまま二重カッコでいれても実行されないものを実行させる
 v-onなどイコールで実行をそのままHTMLに記述するのはナンセンス。vue内のメソッドに記述する。
 
+: bindの省略記法
+@ onの省略記法　省略するかしないかは統一する。
+
 v-onでイベント発火をさせている状態のみ。
 function(event) からconsole.log(event)で中身を取得することができる。
 event.clientX event.clientY
@@ -15,3 +18,9 @@ event.clientX event.clientY
 
 スタッププロパゲーション？　Vueは　.stopのみで対応可能。
 
+prevetDefaultは　.preventで対応可能。
+v-on:keyup.enter keyup,spec な真後ろに追加できる。
+動画56分
+
+v-model HTMLからVueの内容を書き換えることが可能なもの。
+動画1時間後
