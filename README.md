@@ -9,7 +9,7 @@ Vue.js&Nuxt.js超入門 http://urx.blue/SCxw
 Nuxt.jsビギナーズガイド　http://urx.blue/cvst  
 
 時間  
-定時後 : 約2時間/日  
+平日（朝、定時後）: 約2時間/日  
 休日 : 約5.6時間/日    
 
 7/7 ~ 7/10(定時後 )  
