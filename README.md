@@ -2,11 +2,11 @@
 vueのメモや、学習記録
 
 前提：過去に、VueとNuxtは2.3冊の書籍を勉強したことがあるためいきなり  
-復習の意味合いもあります。
-読んだ書籍
-Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP
-Vue.js&Nuxt.js超入門 http://urx.blue/SCxw
-Nuxt.jsビギナーズガイド　http://urx.blue/cvst
+復習の意味合いもあります。  
+読んだ書籍  
+Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  
+Vue.js&Nuxt.js超入門 http://urx.blue/SCxw  
+Nuxt.jsビギナーズガイド　http://urx.blue/cvst  
 
 時間  
 定時後 : 約2時間/日  
