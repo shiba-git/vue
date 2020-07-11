@@ -17,5 +17,5 @@ BookStoreのモック作成(ログイン、新規作成、本一覧、本投稿�
 タイトル：超Vue.js 2 入門 完全パック - Vueでアプリを作りたい方必見！ (Vue Router, Vuex含む)  
 https://www.youtube.com/watch?v=wy3hqhDPztQ
 
-7/11(土)
-Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第2章を模写
+7/11(土)  
+復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第2章を模写
