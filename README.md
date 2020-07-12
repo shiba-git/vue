@@ -21,4 +21,6 @@ https://www.youtube.com/watch?v=wy3hqhDPztQ
 復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第2章を模写  
 https://jsfiddle.net/uebm487p/139/
 
+7/12(日)  
+復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第3章を模写  
 
