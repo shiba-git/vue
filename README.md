@@ -18,9 +18,10 @@ BookStoreのモック作成(ログイン、新規作成、本一覧、本投稿�
 https://www.youtube.com/watch?v=wy3hqhDPztQ  
   
 7/11(土)  
-復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第2章を模写  
+復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第2章を模写(完了)  
 https://jsfiddle.net/uebm487p/139/
 
 7/12(日)  
-復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第3章を模写  
+復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第3章を模写(完了)  
+復習: Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  の第5章を模写(途中)    
 
