@@ -5,7 +5,7 @@ vueのメモや、学習記録
 読んだことがある書籍  
 Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  
 Vue.js&Nuxt.js超入門 http://urx.blue/SCxw  
-Nuxt.jsビギナーズガイド　http://urx.blue/cvst  
+Nuxt.jsビギナーズガイド http://urx.blue/cvst  
 
 時間  
 平日（朝、定時後）: 約2時間/日  
