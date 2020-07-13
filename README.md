@@ -3,7 +3,7 @@ vueのメモや、学習記録
 
 前提：過去にVueとNuxtは3冊の書籍を勉強したことがあるため復習の意味合いもあります。  
 読んだことがある書籍  
-Vue.jsのツボとコツがゼッタイにわかる本 (日本語) 単行本 http://urx.blue/MVYP  
+Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  
 Vue.js&Nuxt.js超入門 http://urx.blue/SCxw  
 Nuxt.jsビギナーズガイド http://urx.blue/cvst  
 
