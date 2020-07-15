@@ -27,4 +27,4 @@ https://jsfiddle.net/uebm487p/139/
   
 7/13(月)、7/14(火)  
 復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第5章を模写(完了)  
-復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第6章を模写(途中) 
+復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第6章を模写(途中)(完了)
