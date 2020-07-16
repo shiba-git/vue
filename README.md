@@ -29,7 +29,7 @@ https://jsfiddle.net/uebm487p/139/
 復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第5章を模写(完了)  
 復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第6章を模写(途中)(完了)
 
-7/16(木)
+7/16(木)  
 Vue.js&Nuxt.js超入門 第2,3,4章を確認。{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        https://jp.vuejs.org/v2/api/#render    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        v-bindは属性に設定される(再確認)  
