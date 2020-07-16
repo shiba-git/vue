@@ -31,12 +31,12 @@ https://jsfiddle.net/uebm487p/139/
 
 7/16(木)
 Vue.js&Nuxt.js超入門 第2章を確認。{  
-&nbsp;        https://jp.vuejs.org/v2/api/#render    
-&nbsp;        v-bindは属性に設定される(再確認)  
-&nbsp;        v-bind:style v-bind:class  
-&nbsp;        v-if flag(true and false)で切り替える  
-&nbsp;        v-for="(items,id) in items">　idを取得する方法  
-&nbsp;        オブジェクトはユニークで取り出したときに値の順番は保証されない  
-&nbsp;        v-ifとv-forを汎用。v-forが優先される。  
-&nbsp;        $emitの第二引数にあたいを設定する親の関数に引数で取得することが可能。
+&nbsp;&nbsp;        https://jp.vuejs.org/v2/api/#render    
+&nbsp;&nbsp;        v-bindは属性に設定される(再確認)  
+&nbsp;&nbsp;        v-bind:style v-bind:class  
+&nbsp;&nbsp;        v-if flag(true and false)で切り替える  
+&nbsp;&nbsp;        v-for="(items,id) in items">　idを取得する方法  
+&nbsp;&nbsp;        オブジェクトはユニークで取り出したときに値の順番は保証されない  
+&nbsp;&nbsp;        v-ifとv-forを汎用。v-forが優先される。  
+&nbsp;&nbsp;        $emitの第二引数にあたいを設定する親の関数に引数で取得することが可能。  
 }  
