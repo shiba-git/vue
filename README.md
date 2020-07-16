@@ -30,7 +30,7 @@ https://jsfiddle.net/uebm487p/139/
 復習: Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP  の第6章を模写(途中)(完了)
 
 7/16(木)
-Vue.js&Nuxt.js超入門 第2章を確認。{  
+Vue.js&Nuxt.js超入門 第2,3,4章を確認。{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        https://jp.vuejs.org/v2/api/#render    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        v-bindは属性に設定される(再確認)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        v-bind:style v-bind:class  
@@ -39,4 +39,7 @@ Vue.js&Nuxt.js超入門 第2章を確認。{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        オブジェクトはユニークで取り出したときに値の順番は保証されない  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        v-ifとv-forを汎用。v-forが優先される。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        $emitの第二引数にあたいを設定する親の関数に引数で取得することが可能。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        props内でtype,default,validateでバリデーションチェックができる。
+
+
 }  
