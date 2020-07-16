@@ -40,6 +40,6 @@ Vue.js&Nuxt.js超入門 第2,3,4章を確認。{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        v-ifとv-forを汎用。v-forが優先される。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        $emitの第二引数にあたいを設定する親の関数に引数で取得することが可能。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        props内でtype,default,validateでバリデーションチェックができる。
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        算出プロパティは、get,setが設定できる。getは設定しsetは値をもとに戻すイメージ？  
 
 }  
