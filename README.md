@@ -42,6 +42,7 @@ Vue.js&Nuxt.js超入門 第2,3,4章を確認・模写。{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        props内でtype,default,validateでバリデーションチェックができる。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        算出プロパティは、get,setが設定できる。getは設定しsetは値をもとに戻すイメージ？  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        イベント修飾子。.stopはイベントの継承を止める。_selfは自身の発火を止め、自身が発火した場合は発火する。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        slotはタグ内の文字を表示する。    
 }   
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)を購入  
 https://www.udemy.com/course/vue-js-complete-guide/  
