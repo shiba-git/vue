@@ -41,7 +41,7 @@ Vue.js&Nuxt.js超入門 第2,3,4章を確認・模写。{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        $emitの第二引数にあたいを設定する親の関数に引数で取得することが可能。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        props内でtype,default,validateでバリデーションチェックができる。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        算出プロパティは、get,setが設定できる。getは設定しsetは値をもとに戻すイメージ？  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        イベント修飾子。.stopはイベントの継承を止める。_selfは自身の発火を止め、
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        イベント修飾子。.stopはイベントの継承を止める。_selfは自身の発火を止め、  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        自身が発火した場合は発火する。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        slotはタグ内の文字を表示する。    
 }   
