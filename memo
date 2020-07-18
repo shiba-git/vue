@@ -94,10 +94,55 @@ styleObj: {
 配列構文で指定する場合は、複数のオブジェクトを指定する場合に役に立つ。:style="[styleObj, styleobj]"
 
 v-elseはv-ifのすぐ下に書かないとだめ
+v-ifは切り替えるのは重い（結構切り替える場合はshowを使用する）
 v-if=""
 v-else-if=""
-v-else
+v-else  
+  
+v-ifを複数条件分岐したい場合はtemplateタグで囲む  
+ 
+v-show v-ifと同じ効果。show は非表示にする場合は、display:none  
+templateに使用できない（display:noneをタグにつけれない）  
+v-elseみたいに使えない。  
+また初期描画が遅い(フリッカーが起こる)
 
-v-ifを複数条件分岐したい場合はtemplateタグで囲む
+v-for(fruite, index) in fruits indexで番号を取得できる   
+オブジェ区とは順番が保証されない  
+v-for(fruite, key) in fruits オブジェクトのkeyを取得できる  
 
+<template v-for""> できれいにしたに線を引ける。
+<li></li>
+<hr>
+</template>
+
+n in 10で整数値を使用できる  
+{{ n }}  
+in は of も使用できる(イテレーター構文)  
+
+v-for="(fruite, key) in fruits" :key="fruit"  
+key は template で使用できない indexを使用しない配列の0番目１番目などごちゃになる  
+  
+new Vue 複数インスタンスを使用できるが基本使用しない。  
+new Vue を変数にまとめることで外側から変更することが可能 var vm1 = new Vue  
+
+53. 外側から追加した場合、リアクティブデータにならない（上記の方法）  
+getter setter watcher を工夫してみる console.log(vm) などインスタンスの中身を見れる　しかし外付けのプロパティは作成されていないのが確認できる
+
+comnsole.log(vm.$data)  ユーザーが使用するのは$が付いている.  
+$: ダラーと読む  
+あとから追記できないが元々定義された変数をdata: dataなどの書き方ができる data={ neme: , message: ,}  
+  
+this.$data でインスタンスの中からアクセスできる。
+ホームページ　API で$一覧が確認できる  
+https://jp.vuejs.org/v2/api/index.html#%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3  
+  
+$mount は　el: #app を指定できる $mount(#app);  
+new Vue({  
+  template: "<h1>M {{ name }}</h1>"  
+}).$mount('#app');  
+templateプロパティは、タグを代わりになる。  
+
+
+   
+  
 
