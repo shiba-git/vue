@@ -52,5 +52,8 @@ http://urx.blue/7wjR
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)  
 http://urx.blue/7wjR セクション1(完了) セクション2(途中)  
   
+7/18(土)  
+超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)  
+http://urx.blue/7wjR セクション2(完了) セクション3(完了)  セクション4(完了)  セクション5(完了)   
   
   
