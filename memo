@@ -45,7 +45,7 @@ dataを動的な表現をすることができない。あくまで初期値
 computedプロパティ
 関数で書き、プロパティなのでreturnで返す
 またthisでdataにアクセスする
-return後は同期処理を書くのが普通。非同期処理はかけない
+return後は同期処理を書くのが普通。非同期処理はかけない(setTimeoutなど)
 
 computed methodの違い
 methodは　{{ function() }}でテンプレートで実行すると
@@ -58,15 +58,46 @@ this.○○での値が変更された場合のみ実行される。
 watchは基本的には使用しない。computedを使用するのがベストプラクティス
 変更された時に非同期に処理をすることができる。（例：３秒後に処理など）
 
+compued内の関数はthis.counterが動いても実行されない。
+watchで対応する
+watch: {
+  counter: function(){
+  
+  }
+}
+
 computed （）をつけない
 methodは()を付ける
-@click = {{ countUp() }} //JavaScriptとして実行
-@click = {{ countUp }} //Vue.jsとして実行
+@click ="countUp()" //JavaScriptとして実行
+@click ="countUp" //Vue.jsとして実行
+
+
+:class="{ red: true, 'bg-blue': flase }"
+@click = "isActive = !isActive"
+computed内のオブジェクトでも対応可能
 
 クラスやstyleバインドは、オブジェクトか配列で指定する(積極的にオブジェクトを使用する)
 'background-color'みたいなケバブ形式は''で囲って指定する
+:style="{ color: red, 'background-color: blue}" をdataとして扱う場合もある
+data: {
+  textColor: 'red',
+  bgColor: 'blue'
+}
+オブジェクトにする
+:style="styleObj"
+styleObj: {
+  textColor: 'red',
+  bgColor: 'blue'
+}
 
-配列構文で指定する場合は、複数のオブジェクトを指定する場合に役に立つ。
+オブジェクトがあり、その後配列を検討する
+配列構文で指定する場合は、複数のオブジェクトを指定する場合に役に立つ。:style="[styleObj, styleobj]"
 
+v-elseはv-ifのすぐ下に書かないとだめ
+v-if=""
+v-else-if=""
+v-else
+
+v-ifを複数条件分岐したい場合はtemplateタグで囲む
 
 
