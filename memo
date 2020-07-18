@@ -142,6 +142,19 @@ new Vue({
 }).$mount('#app');  
 templateプロパティは、タグを代わりになる。  
 
+59. createElementとrenderは違う.  
+render h('h1', 'こんにちは') はVNodeを作成している。仮想DOM  
+https://qiita.com/teinen_qiita/items/ed1bb1909a17f9ca9daa  
+console.log(document) console.dir(document);  
+dir -> log オブジェクトからDOMに変換している  
+
+60. DOMを見ないで仮想DOMの違いを見つけて、すばやく必要な部分だけ変更することが出来る。  
+62.要確認　
+
+63.this.$destroyですべて破棄することできる 破壊後、名前を変更しようとしても機能しない  
+https://jp.vuejs.org/v2/api/#vm-destroy  
+
+
 
    
   
