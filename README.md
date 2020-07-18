@@ -46,5 +46,11 @@ Vue.js&Nuxt.js超入門 第2,3,4章を確認・模写。{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        slotはタグ内の文字を表示する。    
 }   
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)を購入  
-https://www.udemy.com/course/vue-js-complete-guide/  
+http://urx.blue/7wjR
+  
+7/17(金)
+超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)  
+http://urx.blue/7wjR セクション1(完了) セクション2(途中)  
+  
+  
   
