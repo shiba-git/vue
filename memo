@@ -154,8 +154,30 @@ dir -> log オブジェクトからDOMに変換している
 63.this.$destroyですべて破棄することできる 破壊後、名前を変更しようとしても機能しない  
 https://jp.vuejs.org/v2/api/#vm-destroy  
 
-
-
-   
+Babel ES6をES5に変換　ブラウザ対応  
+ESLint 検証ツール　バグを発見  
+node.js 開発用サーバー  
+yarn Facebookが公開してる管理サーバー  
+Vue CLi サーバーがあれば更新が楽になる  
   
-
+  
+ ファイル構成  
+  node-module パッケージが入っている
+  gitnonre 
+  babel.config.js  ES5に書き換え  
+  package.json postcss はcssをどのようなルールでやるか  
+  public @vue/cli-serverはwebpack srcの中身を見てる.なのでwebpackに見られたくないものはpublic  
+  基本的にはファイルは置かない  
+   indexはhead metaなどを設定する
+   assets /css/image/が入る  
+   
+   main.js importVue はpackage のVueをインポート  
+   main.js はindex.htmlに読み込まれている
+   
+   render: h => h(App) Appはコンポーネントオブジェクトを返している.  
+   App.vue シングルコンポーネントになる  
+   
+   distは実際にできるファイル  
+   npm run bulid //package.jsonファイルのbulidを実行 chunk-venderはnode-module  
+   
+   
