@@ -48,7 +48,7 @@ Vue.js&Nuxt.js超入門 第2,3,4章を確認・模写。{
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)を購入  
 http://urx.blue/7wjR
   
-7/17(金)
+7/17(金)  
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)  
 http://urx.blue/7wjR セクション1(完了) セクション2(途中)  
   
