@@ -1,34 +1,45 @@
 
 反転は、split().reverse().join('')で対応可能
 
+v-text　と {{ message }} は同じ
 
-v-once 実行を一度だけにする。書き換え処理の書き換え前などを表示することが可能。
+12. v-once 実行を一度だけにする。書き換え処理の書き換え前などを表示することが可能
+this.message = 'Hello' などで書き換えた場合。
 (動画　22分)
 
-v-html 関数内にタグを入れてもエスケープ処理をしてくれる
+13. v-html 関数内にタグを入れてもエスケープ処理をしてくれる
 扱い注意。ユーザからの情報を受け取る場合は使用しない(XSS)
 
-v-bind hrefなど属性値にそのまま二重カッコでいれても実行されないものを実行させる
-v-onなどイコールで実行をそのままHTMLに記述するのはナンセンス。vue内のメソッドに記述する。
+14. v-bind hrefなど属性値にそのまま二重カッコでいれても実行されないものを実行させる
+: で引数をつける。　v-bind:url = "url" url="https://google.com/"
 
-: bindの省略記法
-@ onの省略記法　省略するかしないかは統一する。
+v-bindの応用的な使い方。オブジェクト形式で保存できる。<p v-bind="{ href: url, id: number }">
+
+v-onの次はイベントを記述する
+https://developer.mozilla.org/ja/docs/Web/Events
 
 v-onでイベント発火をさせている状態のみ。
 function(event) からconsole.log(event)で中身を取得することができる。
 event.clientX event.clientY
 
-複数の引数を利用して、eventを入れる場合は$eventとする。
+v-onなどイコールで実行をそのままHTMLに記述するのはナンセンス。vue内のメソッドに記述する。
 
-スタッププロパゲーション？　Vueは　.stopのみで対応可能。
+v-on:click 複数の引数を利用して、eventを入れる場合は$eventとする。
+change($event, 10)
 
+20. スタッププロパゲーション？　Vueは　.stopのみで対応可能。.selfも可能
 prevetDefaultは　.preventで対応可能。
+v-on:click.prevent;
+
 v-on:keyup.enter keyup,spec な真後ろに追加できる。
 動画56分
 
+: bindの省略記法
+@ onの省略記法　省略するかしないかは統一する。
+
 v-model HTMLからVueの内容を書き換えることが可能なもの。
 
-動的なプロパティ
+動的なプロパティ 
 dataを動的な表現をすることができない。あくまで初期値
 
 computedプロパティ
@@ -39,6 +50,7 @@ return後は同期処理を書くのが普通。非同期処理はかけない
 computed methodの違い
 methodは　{{ function() }}でテンプレートで実行すると
 テンプレート内が書きかわると実行される。関数内の変数が関係なくても実行される
+this.○○での値が変更された場合のみ実行される。
 
 なのでcomputedプロパティを使用する。computedプロパティは賢く、関数内にある変数が書き換わったのみ実行
 される仕組みになっている。
