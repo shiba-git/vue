@@ -180,4 +180,15 @@ Vue CLi サーバーがあれば更新が楽になる
    distは実際にできるファイル  
    npm run bulid //package.jsonファイルのbulidを実行 chunk-venderはnode-module  
    
+   75.component はdataを関数に変更する。オブジェクトだとdataの値を全部変えてしまう。  
+   76.基本的にローカル登録して使用する  グローバルはバグに原因になる。
+   new Vue({  
+     components: { //ローカルで登録する  
+      'my-component': component;
+     }  
+   })  
+   
+   App.vue 単一コンポーネントファイル
+   import App from ./App.vue はオブジェクトとして返される  
+   templateないは１つのタグで囲まないとエラーが出る。  
    
