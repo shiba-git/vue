@@ -192,3 +192,68 @@ Vue CLi サーバーがあれば更新が楽になる
    import App from ./App.vue はオブジェクトとして返される  
    templateないは１つのタグで囲まないとエラーが出る。  
    
+   ケバスケースとパスカルケースを統一する  
+   パスカルだとコンポーネントだとわかりやすい。  
+   Vue Cliだからパスカルが使用できる。ブラウザは小文字大文字の区別がつかない。  
+   
+   css scoped で自身のコンポーネント内に適応させるようにする  
+   data-v-○○○○などで管理している(デベロッパーツールのエレメントで確認できる)  
+   
+   props: プロパティ 子に書く。 
+   ケバスケースで書くのがおすすめ　属性なので<hello :total-number ></hello>  
+   
+   validate type requird default https://jp.vuejs.org/v2/guide/components-props.html#%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%81%AE%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3  
+   
+   $emitは元々はデータを渡すものではない。カスタムイベントを作成するもの。イベントに載せてデータを渡すイメージ
+   this.$emit('my-con', this.number + 1)  受け取る側 @my-con="increment" incremrnt(v)
+   
+   $emit のイベントはケバブケースにする JSで使われないため基本HTMLで使用される<heelo @my-click >  
+   slot コンポーネントタグ内にHMTLコードを送ることが出来る  
+   slot はコンポーネントタグを書いたVueのデータしか使用できない。スタイルは例外 送られたタグにスタイルが適応される場合がある
+   親と子に同じスタイルを適応すると親が勝つ。  
+   <slot>デフォルトのタイトル</slot> 親のコンポーネントタグ内になにもない場合はslotタグ内にデフォルトを指定できる  フォールバックコンテンツ  
+   
+  　<template v-slot:name ></template> <slot name="name"></slot>  
+  　なにもtemaplte v-slotないものはデフォルトの<slot></slot>に対応される(templateの部分を取り除いて)
+    <template v-slot:default> </template> //古いバージョンは注意が必要  
+    
+    <slot :user=user></slot> dataを渡すことが出来る。子から親コンポーネントに渡す。 <v-slot:user="slotProps">
+    デフォルトしかない場合は、templateではなくコンポーネントタグに記述することできる。 (本当に他に名前スロットがない場合)
+
+    v-slot:defaultが自動にできる。 v-slot="" で子から親に渡せる。
+    v-slot:[title] []　大かっこで動的な名前の記述ができる dataを取り出せる。
+    #name #でslotを省略記述できる コンポーネントタグに #default="slotProps"  
+    
+    <component is="defaultPage"></component> defaultPage="Home"
+    動的コンポーネントは切り替えるたびにdestroyedされる　タブの切り替えは使用しないほうがいい.  
+    <keep-alive> //ラップしてデータを保持することが出来る
+     <component :is="defaultPage"></component>
+    </keep-alive>
+      
+    //以下はキープアライブを使用した場合は以下のライフサイクルをフックを使用できる  
+    表示された場合と非表示された場合をフックできる  About.vue Home.vueに記述する  
+    deactivated(){  
+    }  
+    actibated(){  
+    }  
+    
+    v-model.lazy はenterやフォーカスを外した場合。  
+    v-model.number input type ="number" は初期値は数値だがカウントをプラスすると文字列になるので
+    numberをつけて対応する  
+    .trim は先頭と語尾の空白を削除してくれる  
+    
+    white-space: pre; で空白を有効にする  
+    checkbox は true & false  
+    複数の場合は配列で入れる[]  
+    
+    v-modelは同じものを指定するとグループだと判断してくれる  
+    <select v-model="eventData.location" >
+      <option v-for="location in locations" :key="location" >{{ location }}</option>
+    </select>
+    selectのv-modelで現在の値を取得できる.  
+    v-modelの中身は、:value="eventData.title" @input="eventData.title = $event.target.value" 
+    (input type="text" の場合)  
+      
+    
+    
+    
