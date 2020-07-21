@@ -254,6 +254,33 @@ Vue CLi サーバーがあれば更新が楽になる
     v-modelの中身は、:value="eventData.title" @input="eventData.title = $event.target.value" 
     (input type="text" の場合)  
       
+    Vue.directive("border", {}) 第二引数はオブジェクト. 
+    bind update をまとめることが出来る 第二引数を関数にする
+    Vue.directive("border", function(el, binding){
+    }
+    bindingでデータを受け取ることが出来る。 v-border="'5px'";
+    Vue.directive("border", function(el, binding){
+      el.style.border = "solid black 2px";
+      el.style.borderWidth = binding.value;
+    });
     
+    <h1 v-border="{width: '5px', color: 'red'}">Home</h1> 複数はオブジェクトで受け取れる。
+    el.style.borderWidth = binding.value.width;
+  　el.style.borderColor = binding.value.color;
+   
+    引数でも取ることが出来る。複数取ることは出来ない。  
+   　<h1 v-border:dotted="{width: '5px', color: 'red'}">Home</h1>  
+    el.style.borderStyle = binding.arg;  
     
+    修飾子も取れる ifはつねにtur & falseを返す  
+    <h1 v-border:dotted.round="{width: '5px', color: 'red'}">Home</h1>
+    if(binding.modifiers.round){
+      el.style.borderRadius="0.5rem";
+    }
     
+    カスタムディレクトリは、ローカルに登録することもできる thisは使えない.
+    export default {
+    directives: {
+        border(el, binding){}
+        }   
+    }
