@@ -75,9 +75,11 @@ http://urx.blue/7wjR セクション12(途中)
 7/23(木:祝日)  
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)   
 http://urx.blue/7wjR セクション12(完了) セクション13(完了)  
-https://codesandbox.io/s/relaxed-joliot-neg70?file=/src/App.vue  
-
-
+https://codesandbox.io/s/relaxed-joliot-neg70?file=/src/App.vue   
+  
+7/24(金:祝日)  
+超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)   
+http://urx.blue/7wjR セクション14(完了) セクション15(完了)  
 
 
 
