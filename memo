@@ -312,7 +312,63 @@ Vue CLi サーバーがあれば更新が楽になる
     
     beforeenter, enter, leave を使用することが多い。  
     transform-groupを再利用する場合はコンポーネントにする。またslotを使用する  
-     
     
+    Vue Router 
+    use プラグインを使用する.
+    <router-view></router-view> あくまでコンポーネントを切り替えているためサーバーなどの処理はない  
+    /#/users/ #以降はidなのでインターネットに関係ない。シングルアプリケーションはindex返して使い分けること  
+    サーバーにindexに向けるように自分で書く必要があります。modeをヒストリーに変更
     
+    active-class="link-active" /usersでも / のhomeも大きくなる。
+    完全マッチにしたい場合は　exact
     
+    router-view 内に router-viewを使用したい場合は、
+     children: [
+                // スラッシュはなし
+                {path: "posts", component: Posts},
+                {path: "profile", component: Profile}
+            ]
+      子供を宣言する。  
+      
+      動的にtoをする
+      <router-link :to="'/users/' + (Number(id) + 1) + '/profile'">次のユーザーの</router-link>
+      
+      クエリを追加できる。 またパラムも指定できる
+      <router-link :to="{ 
+            name: 'user-id-profile', 
+            params: { id: (Number(id) + 1)},
+            query: { lang: 'ja' }
+            }">次のユーザーの</router-link>
+      
+      router.js
+      名前付きviewを使用するとpropsも同時宣言しないと数字が取得できない。
+      components: {
+                default: Users,
+                header: HeaderUsers
+             }, 
+            props: {
+                default: true,
+                header: false
+            },
+    
+        router.js
+        リダイレクトは以下の通りで実行できる
+        {
+            path: "/hello",
+            redirect: "/"
+        } ]
+        
+        Vue routerはデフォルトだと#で移動しない
+        手動でしないとダメ
+        
+        beforeenter で
+        this.$root.$emitにすると一番上の階層に発火させることが出来る.
+        this.app.$root.$on.('triggerScroll', function(){
+          resolve({ x: 0 , y: 100});
+        });
+        
+        vue cli はprefetchを使用して暇なとき裏で取得する  
+        
+        
+        
+        
