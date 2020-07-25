@@ -7,10 +7,6 @@ Vue.jsのツボとコツがゼッタイにわかる本 http://urx.blue/MVYP
 Vue.js&Nuxt.js超入門 http://urx.blue/SCxw  
 Nuxt.jsビギナーズガイド http://urx.blue/cvst  
 
-時間(仮・変動あり)  
-平日（朝、定時後）: 約2時間/日  
-休日 : 約5.6時間/日    
-
 7/7 ~ 7/10(定時後)  
 BookStoreのモック作成(ログイン、新規作成、本一覧、本投稿、カートページ)  
 通勤・空いた時間に視聴  
@@ -81,5 +77,8 @@ https://codesandbox.io/s/relaxed-joliot-neg70?file=/src/App.vue
 超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)   
 http://urx.blue/7wjR セクション14(完了) セクション15(完了)  
 
-
+7/25(土)  
+超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)   
+http://urx.blue/7wjR セクション16(完了)
+https://codesandbox.io/s/strange-hawking-59vcp
 
