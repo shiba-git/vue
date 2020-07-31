@@ -1,0 +1,85 @@
+install  
+ npm install -g typescript  
+   
+TypeScript Editor Support  
+https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support  
+
+ tsc index.ts typescriptをコンパイル  
+ 
+ ドキュメントとして(一番重要)  
+ linter として
+ ES5へのコンパイラとして  
+ 
+ 型としてドキュメントがわかる
+ 内容は関数名で判断する  
+ 
+ 実行する前にエラーを確認する Linter  
+ イベントを発火させなくてもエラーを発見することが出来る  
+ ESLint は型がないリンター  
+ エラーが出てもjsが作成される  
+ 
+ 変換可能か確認する  
+ https://kangax.github.io/compat-table/es6/  
+ 
+ TypeScript JavaScriptの型  
+ tsc がtyoeScriptの型 
+ JavaScriptエンジンが使うものはJavaScriptの型  
+ 
+ 変数、関数の引数　関数の返り値などに型をつける
+ visual stduio code の型を参考にする  
+ 
+ 型注釈　: boolean 
+ 型推論　上記を消してもtypescriptが推論することが出来る。  
+ 基本的には型推論を使用する。型推論できないときに型注釈を使用する  
+ 
+ const fruits: string[] で数値をいれたりする、stringが持っていないメソッドを使用しようとしたときに
+ エラーが出る。  
+   
+ tuple は配列を厳しく型を宣言する。しかし、pushで追加することが出来る。初期宣言は厳しいが途中追加は甘い。  
+ でも参照するときはエラーがでる。  
+ 
+ tsc index.ts --watch ウォッチモードにすることができる.  
+ tsc --init で　configファイルが出来て tscで実行できる  
+ 37. lib [] で使えるメソッドが確認できる。  コメントされているとtargetで決まる。
+   ES6 DOM DOM.Iterable ScriptHost 
+   
+ allowJS JSファイルもコンパイルの対象にする  
+ checkJS はallowJSと一緒にオンにする。エラーのチェックをする  
+ jsx ReactJSのときに使用する  
+ declaration 型定義ファイル (自作ライブラリ) .d.tsも一緒に渡すと型の情報が載っているためわかりやすい  
+ 
+ sourceMap　は　car.js.map でJSからTypeScriptに変換することが出来る  
+ outdir は一番効率よく役性される。しかし嫌ならrootdirを使用する
+ removeComments ts内のコメントを削除するかの設定
+ noEmit はコンパイルしてなにも出力しない(つまりエラーだけをチェックする)  
+ noEmitOnError はエラーが出た場合、コンパイルしないようにする。  
+ 
+ "strict": true,                           /* Enable all strict type-checking options. */
+    // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
+    // "strictNullChecks": true,              /* Enable strict null checks. */
+    // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
+    // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
+    // "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
+    // "alwaysStrict": true, 
+  した7つがtrueになっている  
+  
+  noImplicitAny は暗黙的なanyはダメ。パラメータは型がそのままのためanyは使えない。
+  変数は書き換わる可能性があるので、使用できる
+  
+  strictNullChecks はnullのチェックを厳しくする  
+  strictBindCallApply bind call applyを厳しく検査する  
+  
+  noUnusedLocals //ローカル変数を使用しているか確認することが出来る グローバル変数は警告が出ない  
+  noUnusedParameters は関数のパラメータに使用されていないものを警告
+  noImplicitReturns　return をちゃんと命じてきに使用しよとでる
+  
+  // Class
+  classはオブジェクトの設計図
+  インスタンス
+  
+  
+  
+ 
+   
+ 
