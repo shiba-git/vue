@@ -1,5 +1,5 @@
-# vue
-vueのメモや、学習記録
+# Azure Nuxt Vue TypeScript
+学習記録
 
 前提：過去にVueとNuxtは3冊の書籍を勉強したことがあるため復習の意味合いもあります。  
 読んだことがある書籍  
